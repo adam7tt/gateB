@@ -1,27 +1,3 @@
-# Minimal Headless SPA Demos
-
-The new Visual SPA Editor allows authors to edit your SPA, reducing your ongoing maintenance duties. (win!) But you get to keep everything fully headless.
-
-This demo shows you how to use the basic features for both React and Angular.
-
-![The App](magnolia/_dev/README-screenshot-app.png)
-
-## Pages and Components
-
-The demo contains:
-
-- Basic page template
-- Contact page template
-
-- Header component
-- Paragraph component
-- Image component
-- List component
-- Item component (available inside List component)
-- Expander component
-
-- Navigation component
-
 # Setup
 
 ## Requirements
@@ -79,23 +55,6 @@ Open the Security app, open the `Roles` tab, edit the `anonymous` role, go to `W
 
 Build and deploy the SPA to Magnolia to make it available for editing.
 
-### React
-
-Go to `/spa/react-minimal` on the terminal and run `npm install`, and then `npm run deploy:mgnl`.
-
-Once built, check that the app is deployed to `magnolia/light-modules/react-minimal-lm/webresources/build`.
-
-See the `.env` files for important configurations.
-
-### Angular
-
-Go to `/spa/angular-minimal` on the terminal and run `npm install`, and then `ng build --prod`.
-(If you forget the '--prod', the paths to the js and css in the created index.html will be incorrect.)
-
-Once built, check that the app is deployed to `magnolia/light-modules/angular-minimal-lm/webresources/build`.
-
-See the files in `/src/environments` for important configurations.
-
 ### Vue
 
 Go to `/spa/vue-minimal` on the terminal and run `npm install`, and then `npm run deploy:mgnl`.
@@ -128,14 +87,6 @@ Then add components into the `Main` or `Extras` area of the page.
 You can also add additional pages as children of that page.
 
 ## Running your SPA in development mode
-
-### React
-
-Build and start the headless React application inside `/spa/react-minimal` by running `npm start`.
-
-### Angular
-
-Build and start the headless Angular application inside `/spa/angular-minimal` by running `ng serve`.
 
 ### Vue
 

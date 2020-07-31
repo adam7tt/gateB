@@ -1,0 +1,15 @@
+<nav class="Navigation">
+  <ng-template ngFor let-item [ngForOf]="navItems">
+    <a [ngClass]="{ active: isActive(item) }" [routerLink]="getLink(item)">{{
+      item.navigationTitle || item.title || item['@name']
+    }}</a>
+  </ng-template>
+  <div class="languages">
+    <span
+      *ngFor="let language of languages"
+      [ngClass]="{ active: currentLanguage === language }"
+      (click)="clickLanguage(language)"
+      >{{ language }}</span
+    >
+  </div>
+</nav>

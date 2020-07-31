@@ -1,0 +1,7 @@
+label: News Items
+form:
+    properties:
+        text:
+            label: News Items Text
+            $type: textField
+            i18n: true
